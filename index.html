@@ -40,7 +40,7 @@
     /* Password gate */
     #passGate{
       position:fixed; inset:0; z-index:9999;
-      background:var(--bg);
+      background:white;
       display:flex; align-items:center; justify-content:center;
       font-family:var(--sans); color:var(--text);
     }
@@ -49,8 +49,9 @@
       text-align:center; max-width:380px; width:100%; padding:0 22px;
     }
     .gate-box .logo-big{
-      width:64px;height:64px;border-radius:0;margin:0 auto 24px;
+      border-radius:0;margin:0 auto 24px;
       background:transparent;
+      margin-bottom: 60px;
       position:relative;overflow:hidden;
       display:flex;align-items:center;justify-content:center;
     }
@@ -411,7 +412,7 @@
   <div id="passGate">
     <div class="gate-box">
       <div class="logo-big"><img src="logo.jpg" alt="CUBY"></div>
-      <h2>CUBY Demo Access</h2>
+      <h2>CUBY Access</h2>
       <p class="hint-text">Enter the access code to view the presentation</p>
       <form id="passForm" autocomplete="off">
         <input class="gate-input" id="passInput" type="password" placeholder="Access code" autofocus />
